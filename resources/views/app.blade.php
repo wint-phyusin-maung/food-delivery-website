@@ -8,5 +8,7 @@
   </head>
   <body>
     @inertia
+    <div id="my-app">
+    </div>
   </body>
 </html>
