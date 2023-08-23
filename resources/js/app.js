@@ -6,9 +6,15 @@ createInertiaApp({
     const pages = import.meta.glob('./Pages/**/*.vue', { eager: true })
     return pages[`./Pages/${name}.vue`]
   },
+  progress: {
+    color: '#f88379',
+    delay: 200,
+    showSpinner: true,
+  },
   setup({ el, App, props, plugin }) {
     createApp({ render: () => h(App, props) })
       .use(plugin)
       .mount(el)
   },
 })
+
