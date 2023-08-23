@@ -1,16 +1,14 @@
-
 <template>
-    <Link href="/">Home</Link>
-    <Link href="/users">Users</Link>
-    <Link href="/settings">Settings</Link>
+    Home
+    <Nav/>
 </template>
 
 <script>
-    import { Link } from '@inertiajs/vue3'
+    import Nav from '../Shared/Nav.vue';
 
-    export default {
-    components: {
-        Link,
-    },
-};
+    export default{
+        components: {
+            Nav
+        }
+    }
 </script>

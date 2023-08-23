@@ -24,5 +24,5 @@ Route::get('/users',function(){
 });
 
 Route::get('/settings',function(){
-    return Inertia::render('settings');
+    return Inertia::render('Settings');
 });
