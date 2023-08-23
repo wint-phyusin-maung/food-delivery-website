@@ -1,15 +1,16 @@
+
 <template>
-    <h3>Testing 13</h3>
-    <h2>We should loop it</h2>
-    <ul>
-        <li v-for="framework of frameworks" v-text="framework"></li>
-    </ul>
+    <Link href="/">Home</Link>
+    <Link href="/users">Users</Link>
+    <Link href="/settings">Settings</Link>
 </template>
 
 <script>
-    export default{
-        props: {
-            'frameworks' : Array,
-        }
-    }
+    import { Link } from '@inertiajs/vue3'
+
+    export default {
+    components: {
+        Link,
+    },
+};
 </script>
