@@ -1,5 +1,5 @@
 <template>
-    <Layout>
+    <Layout :username="username">
         <h1 class="text-4xl">Home</h1>
     </Layout>
 </template>
@@ -10,6 +10,9 @@
     export default{
         components: {
             Layout
+        },
+        props : {
+            username : String
         }
     }
 </script>
