@@ -7,14 +7,13 @@
 </template>
 
 <script>
-    import Layout from '../Shared/Layout.vue';
+
     import { Link } from '@inertiajs/vue3';
 
     export default{
         props : {
             time: String
         },
-        layout : Layout
     }
 </script>
 
